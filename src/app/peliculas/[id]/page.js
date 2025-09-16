@@ -38,7 +38,7 @@ export default function MovieDetail() {
     }, [params.id]);
 
     if (!movie) {
-        return <div>fallo</div>;
+        return <div>cargando...</div>;
     }
 
     return (
