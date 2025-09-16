@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Top10Peliculas from "./components/Top10Peliculas";
 
 export default function Home() {
   return (
@@ -16,10 +17,12 @@ export default function Home() {
         color: '#333',
         marginBottom: '1rem'
       }}>Simulación de Examen</h1>
-      <p style={{ 
+      <p style={{
         fontSize: '1.25rem',
-        color: '#666' 
+        color: '#666'
       }}>Programación en Nuevas Tecnologías 2</p>
+      <div> <Top10Peliculas /> </div>
     </div>
+
   );
 }
