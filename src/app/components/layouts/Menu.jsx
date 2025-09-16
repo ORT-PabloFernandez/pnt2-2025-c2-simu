@@ -2,16 +2,15 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { FaTasks, FaUserPlus, FaClipboardList, FaBeer } from 'react-icons/fa';
+import { MdLocalMovies } from "react-icons/md";
 import { usePathname } from 'next/navigation';
 
 const Menu = () => {
   const navLinks = [
-    { name: 'Usuarios', path: '/users', icon: <FaUserPlus className="navIcon" /> },
-    { name: 'Beers', path: '/beers', icon: <FaBeer className="navIcon" /> },
-    { name: 'Administración', path: '/admin', icon: <FaClipboardList className="navIcon" /> },
-    { name: 'Tareas', path: '/tasks', icon: <FaTasks className="navIcon" /> },
+    { name: 'Películas', path: '/peliculas', icon: <MdLocalMovies className="navIcon" /> },
   ];
+
+
 
   const pathname = usePathname();
 
@@ -23,7 +22,7 @@ const Menu = () => {
           href={link.path}
           className={`navLink ${pathname === link.path ? 'activeLink' : 'inactiveLink'}`}
         >
-          {link.icon}   
+          {link.icon}
           {link.name}
         </Link>
       ))}
