@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import MovieList from "../peliculas/MovieList";
 
 export default function TopMovies() {
 	const [topMovies, setTopMovies] = useState([]);
